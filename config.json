@@ -1,0 +1,22 @@
+{
+  "inference_worker": {
+    "prefix": "./inference_worker/inference_worker.py",
+    "name": "inference_worker",
+    
+    "init_args": {
+    	"stopwords": "../data/stopwords.txt",
+        "model_path": "../data/model_artm.bin",
+    },
+    
+    "run_args": {
+      "rmq_connect": "amqp://:@localhost:5672",
+      "rmq_queue": "infl-expectations"
+    },
+    
+    "n_jobs": 1,
+    "add_process_num": false,
+    
+    "depends_on": [], 
+    "mode": "worker"
+  }
+}

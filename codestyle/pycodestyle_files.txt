@@ -1,0 +1,8 @@
+../inference_worker/data_processing/*.py
+../inference_worker/data_processing/preprocessing/*.py
+../inference_worker/data_processing/augmentation/*.py
+../inference_worker/topic_model/*.py
+../inference_worker/topmine/*.py
+../url_parser/*.py
+../server/*.py
+../setup/*.py
